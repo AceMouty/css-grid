@@ -7,9 +7,38 @@
   <link rel="stylesheet" href="../assets/style.css">
   <title>CSS Grid Fundamentals!</title>
 </head>
-
 <body>
+  <style>
+  
+    .container {
+      /* Setup grid container */    
+      display: grid;
 
+      /* Setup Grid Columns */
+      /* grid-template-columns: auto auto auto; */
+      grid-template-columns: repeat(3, auto);
+
+      /* Setup our rows that we must have explicitly */
+      grid-template-rows: repeat(2, 300px);
+      grid-gap: 20px;
+
+    }
+
+
+  </style>
+
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+  </div>
 </body>
 
 </html>
